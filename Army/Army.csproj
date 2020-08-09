@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A33D1D7-12A3-4046-A7DE-493287649898}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Army</RootNamespace>
+    <AssemblyName>Army</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArmyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArmyList.Designer.cs">
+      <DependentUpon>ArmyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beseda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beseda.Designer.cs">
+      <DependentUpon>Beseda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commandir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commandir.Designer.cs">
+      <DependentUpon>Commandir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condidats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condidats.Designer.cs">
+      <DependentUpon>Condidats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CondidatsLearning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CondidatsLearning.Designer.cs">
+      <DependentUpon>CondidatsLearning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.cs">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Disciplin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Disciplin.Designer.cs">
+      <DependentUpon>Disciplin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editLang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editLang.Designer.cs">
+      <DependentUpon>editLang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editLanguage.Designer.cs">
+      <DependentUpon>editLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editMan.Designer.cs">
+      <DependentUpon>editMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyAbroad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamilyAbroad.Designer.cs">
+      <DependentUpon>FamilyAbroad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="familyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="familyEdit.Designer.cs">
+      <DependentUpon>familyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pooschren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pooschren.Designer.cs">
+      <DependentUpon>Pooschren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ArmyList.resx">
+      <DependentUpon>ArmyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beseda.resx">
+      <DependentUpon>Beseda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commandir.resx">
+      <DependentUpon>Commandir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condidats.resx">
+      <DependentUpon>Condidats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CondidatsLearning.resx">
+      <DependentUpon>CondidatsLearning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disciplin.resx">
+      <DependentUpon>Disciplin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editLang.resx">
+      <DependentUpon>editLang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editLanguage.resx">
+      <DependentUpon>editLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editMan.resx">
+      <DependentUpon>editMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamilyAbroad.resx">
+      <DependentUpon>FamilyAbroad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="familyEdit.resx">
+      <DependentUpon>familyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pooschren.resx">
+      <DependentUpon>Pooschren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
